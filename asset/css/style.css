@@ -1,0 +1,298 @@
+/* main
+    header
+        nav
+            subnav
+    slider
+    content
+    footer */
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .text-color {
+        color: #fff;
+    }
+
+    #main{
+        
+    }
+    
+    /* header */
+    #header{
+        position: fixed;
+        height: 46.5px;
+        background-color: black;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    #header .search-btn {
+        float: right;
+        color: #fff;
+        line-height: 46.5px;
+        padding: 0 21px;
+
+    }
+
+    #header .search-btn:hover   {
+        background-color: orangered;
+        cursor: pointer;
+    }
+    #nav {
+        display: inline-block;
+    }
+
+    #nav > li {
+        display: inline-block;
+    }
+    
+    #nav li:hover .subnav {
+        display: block;
+    }
+    #nav li {
+        position: relative;
+    }
+
+    #nav > li > a{
+        color: white;
+        text-transform: uppercase;
+    }
+
+    #nav li a{
+        padding: 0px 24px;
+        text-decoration: none;
+        line-height: 46.5px;
+        display: block;
+    }
+
+    #nav .nav-icon {
+        font-size: 14px;
+        
+    }
+    
+    
+    #nav .subnav li:hover a,
+    #nav > li:hover > a {
+        color: black;
+        background-color: gray;
+    }
+    
+    #nav .subnav{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        top: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px black;
+    }
+
+    #nav .subnav a {
+        color: #000;
+    }
+    
+    #nav , .subnav li {
+        list-style-type: none;
+    }
+
+    #nav .subnav a{
+        padding: 0px 12px;
+        line-height: 38px;
+    }
+
+    /* slider */
+    #slider{
+        margin-top: 46.5px;
+        padding-top: 50%;
+        position: relative;
+        background: url(https://www.w3schools.com/w3images/chicago.jpg) top center / contain no-repeat  ;
+    }
+
+    #slider .text-content {
+        position: absolute;
+        bottom: 47px;
+        color: #fff;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        /* padding: 32px 0; */
+    }
+    #slider .text-content .text-heading {
+        font-weight: 450;
+        font-size: 24px;
+    }
+
+    #slider .text-content .text-noidung {
+        margin-top: 25px;
+        font-size: 15px;
+    }
+    
+    /* content */
+    #content{
+        max-width: 800px;
+        padding: 64px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content .chung {
+        text-align: center;
+        padding: 64px 0;
+    }
+
+    #content .chung .content-heading {
+        margin: 10px 0;
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
+
+    #content .chung .content-subheading {
+        margin: 15px 0;
+        font-style: italic;
+        opacity: 0.4;
+    }
+
+    #content .chung .content-text {
+        text-align: justify;
+        line-height: 1.4;
+    }
+
+    /* content - member */
+    #content .member {
+        padding: 32px 0;
+        overflow: hidden;
+    }
+    
+    #content .member-item {
+        float: left;
+        width: 33.33333%;
+    }
+
+    #content .member-item p {
+        margin: 15px;
+    }
+
+    #content .member-item img {
+        width: 60%;
+    }
+    
+    /* content - tour */
+    .tour-section {
+        color:#fff;
+        background-color: #000;
+        width: 100%;
+    }
+    
+    /* content - ticket */
+    .ticket-list {
+        text-align: left;
+        margin-top: 50px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        list-style: none;
+    }
+
+    .ticket-list li {
+        padding: 8px 16px;
+        border-bottom: 1px solid #ccc;
+        color: #757575;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .ticket-list li .sold-out {
+        margin-left: 16px;
+        padding: 7px;
+        color: #fff;
+        background-color: #f44336;
+    }
+
+    .ticket-list li .quantity {
+        float: right;
+        color: #fff;
+        background-color: #000;
+        border-radius: 50%;  /*bo tròn góc*/
+        padding: 0px 7px;
+    }
+
+    /* content - places */
+
+    .places-list {
+        padding: 32px 0px;
+        overflow: hidden;
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .places-item {
+        float: left;
+        text-align:justify ;
+        width: 33.333333%;
+        padding: 0px 8px ;
+        margin-bottom: 16px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .places-item img {
+        width: 100%;
+        display: block;
+    }
+
+    
+    .places-time, .places-desc {
+        margin: 15px 0;
+    }
+    
+    .places-body {
+        color: #000;
+        background-color: #fff;
+        padding: 0px 16px;
+        padding-bottom: 16px;
+    }
+    
+    .places-heading {
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .places-time {
+        opacity: 0.6;;
+    }
+
+    .places-desc {
+        font-weight: 300;
+        font-size: 15px;
+    }
+
+    .places-btn {
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        display: inline-block;
+        padding: 8px 16px;
+
+    }
+
+    .places-btn:hover {
+        color: #000;
+        background-color: #ccc;
+    }
+
+
+    /* footer */
+    #footer{
+
+    }
+
+
+
+
+
