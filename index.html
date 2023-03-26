@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Band</title>
+    <link rel="icon" type="image/x-icon" href="./asset/img/18895087841601363723-512.png">
     <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
@@ -13,19 +15,19 @@
         <div id="header">
             <!-- begin nav -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Brand</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Brand</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="">
+                    <a href="#">
                         More
                         <i class="nav-icon fa-solid fa-angle-down"></i>
                     </a>
                     <ul class="subnav">
-                        <li><a href="">Merchandise</a></li>
-                        <li><a href="">Extras</a></li>
-                        <li><a href="">Media</a></li>
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
                     </ul>
                 </li>
             </ul>
@@ -34,6 +36,10 @@
             <!-- search -->
             <div class="search-btn">
                 <i class="search-icon fa-sharp fa-solid fa-magnifying-glass-plus"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
             </div>
         </div>
         <!-- slider -->
@@ -47,7 +53,7 @@
         <!-- content -->
         <div id="content">
             <!-- about -->
-            <div class="about chung">
+            <div id="band" class="about chung">
                 <h2 class="content-heading">THE BAND</h2>
                 <p class="content-subheading">We love music</p>
                 <p class="content-text">
@@ -77,7 +83,7 @@
             </div>
 
             <!-- tour -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="tour chung">
                     <h2 class="content-heading text-color">TOUR DATES</h2>
                     <p class="content-subheading text-color">Remember to book your tickets!</p>
@@ -88,35 +94,35 @@
                         <li>November<span class="quantity">3</span></li>
                     </ul>
                     <!-- places -->
-                    <div class="places-list">
+                    <div class="places-list row">
                         <!-- New York -->
-                        <div class="places-item">
+                        <div class="places-item col">
                             <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York">
                             <div class="places-body">
                                 <h3 class="places-heading">New York</h3>
                                 <p class="places-time">Fri 27 Nov 2016</p>
                                 <p class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="places-btn">Buy Tickets</a>
+                                <button class="places-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- Paris -->
-                        <div class="places-item">
+                        <div class="places-item col">
                             <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris">
                             <div class="places-body">
                                 <h3 class="places-heading">Paris</h3>
                                 <p class="places-time">Sat 28 Nov 2016</p>
                                 <p class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="places-btn">Buy Tickets</a>
+                                <button class="places-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <!-- San Francisco -->
-                        <div class="places-item">
+                        <div class="places-item col">
                             <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="New York">
                             <div class="places-body">
                                 <h3 class="places-heading">San Francisco</h3>
                                 <p class="places-time">Sun 29 Nov 2016</p>
                                 <p class="places-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="places-btn">Buy Tickets</a>
+                                <button class="places-btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -124,13 +130,184 @@
             </div>
 
             <!-- contact -->
-            <div class="contact chung">
+            <div id="contact" class="contact chung">
                 <h2 class="content-heading">CONTACT</h2>
                 <p class="content-subheading">Fan? Drop a note!</p>
             </div>
-            
+
+            <div class="row">
+                <div class="col col-haft contact-info">
+                    <p>
+                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        Chicago, US
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        Phone: +00 151515
+                    </p>
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        Email: mail@mail.com
+                    </p>
+                </div>
+
+                <div class="col col-haft contact-form">
+                    <form action="">
+                        <div class="row">
+                            <div class="col col-haft">
+                                <input type="text" placeholder="Name" required class="form-control">
+                            </div>
+                            <div class="col col-haft">
+                                <input type="email" placeholder="Email" required class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row mt-8">
+                            <div class="col col-full">
+                                <input type="text" placeholder="Message" required class="form-control">
+                            </div>
+                        </div>
+                        <input class="font-submit-btn mt-16" type="submit" value="SEND">
+                    </form>
+                </div>
+            </div>
         </div>
-        <div id="footer"></div>
+
+        <!-- footer -->
+        <div id="footer">
+            <img src="https://www.w3schools.com/w3images/map.jpg" alt="anh gi do">
+            <div class="social-list">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-github"></i>
+                <p>Powered by <a href="#">w3.css</a></p>
+            </div>
+        </div>
     </div>
+
+
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+
+            <div class="modal-close js-closeBtn">
+                <i class="fa-sharp fa-solid fa-xmark"></i>
+            </div>
+
+            <header class="modal-header">
+                <i class="fa-solid fa-bag-shopping modal-header-icon"></i>
+                Tickets
+            </header>
+
+            <div class="modal-body">
+                <label for="number" class="modal-label">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                    Tickets, $15 per person
+                </label>
+                <input type="text" id="number" class="modal-input" placeholder="How many ?">
+
+                <label for="email" class="modal-label">
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                    Send To
+                </label>
+                <input type="text" id="email" class="modal-input" placeholder="Enter email...">
+
+                <button id="buy-but" class="js-payBtn">
+                    Pay
+                    <i class="fa-regular fa-circle-check"></i> 
+                </button>
+            </div>
+
+            <footer class="modal-footer">
+                <p class="modal-footer-help">Need <a href="#">help?</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        //lấy ra class js-buy-ticket lưu vào biến buyBtns
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+
+        //lấy ra class js-closeBtn lưu vào bién XBtn
+        const XBtn = document.querySelector('.js-closeBtn')
+
+        //biến modal lấy ra class modal
+        const modal = document.querySelector('.js-modal')
+
+        //lấy ra class container
+        const modalContainer = document.querySelector('.js-modal-container')
+
+        //lấy ra nút pay
+        const payBtn = document.querySelector('.js-payBtn')
+        
+        //func nếu click vào nút buy ticket thì thêm class open vào biến modal
+        function showBuyTickets() {
+            modal.classList.add('open');
+        }
+
+        // hàm xử lý khi nhấn vào nút X close
+        function closeBtn(){
+            modal.classList.remove('open');
+        }
+
+        // 
+        function success(){
+            alert("Đã thanh toán thành công !!!")
+        }
+   
+        //tạo biến mới buyBtn chạy 3 lần tương ứng với 3 nút của buyBtns
+        //rồi lắng nghe sự kiện click nếu chọn 1 trong 3 nút buy ticket
+        for(const buyBtn of buyBtns){
+            buyBtn.addEventListener('click',showBuyTickets)
+        }
+
+        //lắng nghe sự kiện click và gọi hàm để đóng cửa sổ buy ticket
+        XBtn.addEventListener('click',closeBtn)
+        
+         //lắng nghe click vào nút pay thì thoát và hiện thông báo đã thanh toán thành công
+        payBtn.addEventListener('click',closeBtn)
+
+        //đóng cửa sổ buy ticket nếu bấm vào vùng ngoài cửa số buy ticket
+        //nhớ bấm vào phần buy ticket thì k đóng cửa sổ
+        modal.addEventListener('click',closeBtn)
+        //ngăn nổi bọt trong phần container,khi click vào vùng này thì k đóng cửa sổ buy ticket
+        modalContainer.addEventListener('click', function(event){
+            event.stopPropagation();
+        })
+    </script>
+
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight ;
+
+        //đóng mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClosed = header.clientHeight === headerHeight;
+            if (isClosed) {
+                header.style.height = 'auto'; 
+            }
+            else {
+                header.style.height = null; 
+            }
+        }
+
+        //tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i=0; i<menuItems.length; i++){
+            var menuItem = menuItems[i];
+            
+            menuItem.onclick = function(event) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav') ;
+                if(isParentMenu){
+                    event.preventDefault() ;
+                }else {
+                    header.style.height = null; 
+                }
+            }
+        }
+    </script>
 </body>
 </html>
