@@ -51,11 +51,7 @@
     }
 
     #nav .subnav{
-        display: none;
-        min-width: 160px;
-        top: 100%;
-        background-color: #fff;
-        box-shadow: 0 0 10px black;
+        position: inherit;
     }
 
     #nav .subnav a {

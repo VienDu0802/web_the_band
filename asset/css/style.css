@@ -127,7 +127,12 @@
     }
     
     #nav .subnav{
-        position: inherit;
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        top: 100%;
+        background-color: #fff;
+        box-shadow: 0 0 10px black;
     }
 
     #nav .subnav a {
